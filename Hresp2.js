@@ -356,8 +356,10 @@ function HrpAL(Naa,Haa,Aaa,Oaa){
     co.waa=hbsmplwh(Naa,"ac").hbw;
     co.haa=hbsmplwh(Naa,"ac").hbh;
 
-    co.howaa=hbsmplwh(Naa,"ac").hbw;
-    co.hohaa=hbsmplwh(Naa,"ac").hbh;
+    co.howaa=hbsmplwh(Haa,"ac").hbw;
+    co.hohaa=hbsmplwh(Haa,"ac").hbh;
+
+    // console.log(co.waa,co.howaa);
 
     co.waah=co.waa/2;
     co.haah=co.haa/2;
@@ -410,6 +412,8 @@ function HrpAL(Naa,Haa,Aaa,Oaa){
 
         co.xaa=co.howaah-co.waah;
         co.yaa=co.hohaah-co.haah;
+
+        // console.log(co.xaa,co.yaa);
 
         hbsmplr(Naa,{hbx:co.xaa,hby:co.yaa});
 
@@ -817,6 +821,8 @@ function HrpAL3(Naa,Haa,Aaa,Oaa,ELFaa,HLFaa,EWaa,EHaa,HWaa,HHaa){
 
 function HrpRA2(Naa,Haa,Aaa,Oaa,ELFaa,HLFaa,ESFaa,HSFaa){
 
+    var co={};
+
     if(typeof Oaa=="undefined"||Oaa==null){
 
         Oaa=false;
@@ -976,6 +982,8 @@ function HrpRA2(Naa,Haa,Aaa,Oaa,ELFaa,HLFaa,ESFaa,HSFaa){
 
 };
 function HrpRA(Naa,Haa,Aaa,Oaa){
+
+    var co={};
 
     if(typeof Oaa=="undefined"){
 
